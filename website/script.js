@@ -23,3 +23,14 @@ document
       behavior: "smooth",
     });
   });
+
+const navbar = document.querySelector(".navigation");
+const scrollThreshold = 150; // Change color after 150px scroll
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > scrollThreshold) {
+    navbar.classList.add("scrolled"); // Add 'scrolled' class
+  } else {
+    navbar.classList.remove("scrolled"); // Remove 'scrolled' class
+  }
+});
