@@ -5,9 +5,11 @@ document.querySelectorAll(".navigation-elements a").forEach((link) => {
     const targetId = e.target.getAttribute("href"); // Get the href attribute (which is the section ID)
     const targetSection = document.querySelector(targetId); // Find the section with that ID
 
-    // Scroll smoothly to that section
+    // Get the height of the navbar
+    const navbarHeight = document.querySelector(".navigation").offsetHeight;
+
     window.scrollTo({
-      top: targetSection.offsetTop,
+      top: targetSection.offsetTop - navbarHeight + 1,
       behavior: "smooth",
     });
   });
