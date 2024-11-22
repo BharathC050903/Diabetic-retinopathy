@@ -24,8 +24,22 @@ document
     });
   });
 
-const navbar = document.querySelector(".navigation");
-const scrollThreshold = 150; // Change color after 150px scroll
+// NavBar color change on scroll
+window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.navigation');
+  const aboutSection = document.querySelector('.about-section');
+
+  const aboutRect = aboutSection.getBoundingClientRect();
+  const navRect = navbar.getBoundingClientRect();
+  
+  // Check if the .about-section is on screen
+  if (navRect.bottom >= aboutRect.top) {
+    navbar.style.backgroundColor = '#ffffff';
+  } else {
+    navbar.style.backgroundColor = '#d6f8d7';
+  }
+});
+
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > scrollThreshold) {

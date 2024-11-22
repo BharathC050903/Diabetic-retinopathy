@@ -34,11 +34,7 @@ body {
   width: 100%; /* Full width */
   padding: 0.2rem;
   bottom: 0.1rem solid #666;
-  transition: background-color 0.8s ease, color 0.3s ease;
-}
-
-.navigation.scrolled {
-  background-color: #ffffff;
+  transition: background-color 0.6s ease, color 0.4s ease;
 }
 
 .vision-guard-title-logo {
