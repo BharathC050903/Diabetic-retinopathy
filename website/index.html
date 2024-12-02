@@ -21,7 +21,7 @@
       <ul class="navigation-elements">
         <a href="#about-section">Learn more</a>
         <a href="#stages">Stages</a>
-        <a href="#contact-us">Contact Us</a>
+        <a href="#footer-content">Contact Us</a>
         <a href="#diagnosis">
           <button
             class="button-79 override-margin intro-section-button"
@@ -197,22 +197,55 @@
       </div>
     </section>
 
-    <div class="section-heading" id="diagnosis">Diagnosis</div>
     <section class="diagnosis">
-      <label for="file-upload" class="file-upload-label">
-        Choose a image
-      </label>
-      <input type="file" id="file-upload" class="file-upload" />
-
-      <button class="button-79" role="button">Get Diagnosis</button>
-      <div class="result">
-        <div class="result-stage">Your Stage will appear here</div>
-        <div class="desc"></div>
+      <div class="section-heading" id="diagnosis" >Diagnosis</div>
+      <div class="steps-container">
+        <div class="step">
+          <div class="circle"> <img  src="img/steps/upload-img.png" alt="upload-icon" /></div>
+         
+          <div class="step-heading">Upload</div>
+          <div class="step-desc">Upload your retinal image to get started.</div>
+          
+        </div>
+        <div class="step">
+          <div class="circle"><img src="img/steps/machine-learning-icon.png" alt="upload-icon" /></div>
+          
+          <div class="step-heading">Machine Learning</div>
+          <div class="step-desc">ML model analyzes your retinal images.</div>
+          
+        </div>
+        <div class="step">
+          <div class="circle"> <img  src="img/steps/result-img.png" alt="upload-icon" /></div>
+         
+          <div class="step-heading">Result</div>
+          <div class="step-desc">View the prediction and severity of diabetic retinopathy.</div>
+        </div>
       </div>
+
+      <div class="upload-result-section">
+        <div class="drag-drop-area-container" id="drop-area">
+        <div class="drag-drop-area">
+
+          <img src="img/cloud_upload.svg" alt="">
+          <div class="desc">Drag & Drop Files here</div>
+          
+        </div>
+        </div>
+        <div class="result">
+          <div class="stage-result-output">
+            Result
+          </div>
+          <div class="stage-result-description">
+            Will Appear here
+          </div>
+        </div>
+        </div>
+      </div>
+      
     </section>
 
     <footer>
-      <div class="footer-content">
+      <div class="footer-content" id="footer-content">
         <div class="footer-logo">
           <img src="img/icon.png" alt="Logo" />
           <div class="vision-guard-title">VisionGuard</div>

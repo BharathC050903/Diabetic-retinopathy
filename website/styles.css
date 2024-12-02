@@ -227,62 +227,72 @@ table.info td {
 }
 
 /* DIAGNOSIS SECTION */
+
 .diagnosis {
-  padding: 4rem;
+  justify-content: center;
+  align-items: center;
+  margin: 10rem;
+}
+.steps-container {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.step {
+  margin-top: 3rem;
   display: flex;
+  gap: 1rem;
   flex-direction: column;
-  gap: 1.2rem;
   justify-items: center;
   align-items: center;
-  justify-content: center;
-  width: 50%;
-  margin: auto;
-  background-color: #d6f8d7;
+}
+.step img {
+  height: 6rem;
+}
+.step-heading {
+  color: #222;
+  font-size: 1.8rem;
+}
+.step-desc {
+  color: #222;
+  font-size: 1.2rem;
+}
+
+.upload-result-section {
+  margin: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.drag-drop-area-container {
+  background-color: #9d9595a8;
   border-radius: 1rem;
-  height: 70%;
-  margin-bottom: 5rem;
 }
-
-/* File selector */
-
-/* Hide the default file input */
-.file-upload {
-  display: none;
-}
-
-/* Style the custom label to look like a button */
-/* Hide the default file input */
-.file-upload {
-  display: none;
-}
-
-/* Style the custom label to look like a button */
-.file-upload-label {
-  background-color: #332cf2; /* Custom background color */
-  color: white;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-  display: inline-block;
+.drag-drop-area {
+  margin: 1rem;
+  box-sizing: border-box;
+  background-color: #9d9595a8;
+  border: #000 dashed 0.2rem;
+  border-radius: 1rem;
+  padding: 2rem;
   text-align: center;
-
-  &:hover {
-    background-color: #271aa2;
-  }
+}
+.drag-drop-area img {
+  height: 14rem;
 }
 
-/* .file-upload-label:hover {
-  background-color: #271aa2;
-} */
-
-/* Optional: Style the file name text once the file is selected */
-.file-upload:focus + .file-upload-label {
-  background-color: #3e8e41;
+.result {
+  margin: 3rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
-
-.file-upload:focus + .file-upload-label::after {
-  content: " (File selected)";
+.stage-result-output {
+  color: #484c55;
+  font-size: 4rem;
+}
+.stage-result-description {
+  color: #373b44;
+  font-size: 1.2rem;
 }
 
 /* FOOTER */
